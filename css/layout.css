@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	.center
+	{
+		margin-left:auto;
+		margin-right:auto;	
+	}
+	#header
+	{
+		width: 100%;
+		height: 343px;
+		background-image:url(images/WoodGrain.png);
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-size:100% 347px;
+		}
+	#logo{
+		width:300px;
+		height:300px;	
+		background-image:url(images/logo.png);
+		background-repeat:no-repeat;
+		background-position:center;
+
+		}	
+	#menu{
+		width:109px;
+		height:66px;
+		position:absolute;
+		margin-left:50%;
+		left:-54px;
+		top:310px;
+		background-image:url(images/woodBox.jpg);
+		}	
+	#band{
+		width:100%;
+		height:4px;
+		background-image:url(images/band.png);		
+		background-repeat:no-repeat;
+		background-size: 100% 100%;
+		}		
+	#venn
+	{
+		height:342px;
+		width:900px;
+		background-color:white;
+		
+		
+	}
+	#vennImage{
+		width:319px;
+		height:342px;
+		background-image:url(images/portrait.png);
+		background-position:center center;
+		background-repeat:no-repeat;
+		display:block;
+		z-index:10;
+		}
+	
+	#designer{
+		position:absolute;
+		top:500px;
+		}
+	#coder{
+		float:left;
+		margin-top:150px;
+		margin-left:625px;
+		}	
+
+	#blue
+	{
+		height:387px;
+		width:100%;
+		
+	}
+	#bios{
+		width:960px;
+	}
+	/*div for jacob, company, and alex have a child div. This allows for vertical centering*/
+	.tableChild{
+		display:table-cell;
+		vertical-align:middle;
+		width:300px;
+		text-align:center;
+		}
+	
+	#jacob
+	{
+	vertical-align:top; 
+	width:305px;		
+	height: 386px;
+	color:#1BA89A;
+	display:inline-table;
+	}
+	#company{
+		vertical-align:top; 
+		width: 340px;
+		height: 386px;
+		color:green;
+		display:inline-table;
+		
+	}
+	#alex{	
+	vertical-align:top; 
+	width:305px;	
+	height: 386px;	
+	color:#1BA89A;
+	display:inline-table;
+	}
+	#cOne{
+		width:282px;
+		height:298px;
+		background-image:url(images/redC.png);
+		background-position:center;
+	
+		}
+	#cOne p{
+		
+		text-align:center;
+		line-height:298px;
+		
+		}	
+	#gallery
+	{
+		height:1108px;
+		width:100%;
+		background-color:#1BA89A;
+	}
+/*Any Questions*/	
+	#anyQuestions{
+		height:295px;
+		width:100%;
+		background-image:url(images/patternSegment.jpg);
+		}
+	#cTwo{
+		height:298px;
+		width:282px;
+		background-image:url(images/greenC.png);
+		background-position:center;}	
+		#cTwo p{
+		text-align:center;
+		line-height:298px;
+		}	
+		
+	#contact_form{
+		height:329px;
+		width:100%;
+		background-color:#A4CF58;
+	}
+	#lowerPattern{
+		height:99px;
+		width:100%;
+		background-image:url(images/patternSegment.jpg);
+	}
+	
+	#footer{
+		height:192px;
+		width:100%;
+		background-color:#2E3A3D;
+	}
+	#semiC{
+		width:282px;
+		height:192px;
+		background-image:url(images/semiC.png);
+		background-position:center;
+		text-align:center;
+		line-height:96px;
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

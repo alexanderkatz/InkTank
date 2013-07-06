@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+form{
+	width:800px;
+	}
+input{
+	margin-top:18px;
+	width:382px;
+	height:33px;
+	}
+#emailInput{
+}
+textarea{
+	width:780px;
+	height:200px;
+	margin:0 auto;
+	margin-top:10px;
+	}	
+
+button{
+	width:100px;
+	color:black;
+	}		

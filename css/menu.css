@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#menu{
+	text-align:center;
+	font-family:Intro Inline;
+	font-size:13px;
+
+	}
+#menu p{
+	margin-top:9px;
+}
+#menu a{
+	text-decoration:none;
+	color:white;
+	}	
+#do:hover{
+	color:#315C6D;
+	}
+#are:hover{
+	color:#1BA89A;
+	}
+#proj:hover{
+	color:#F37771;
+	}
+#cont:hover{
+	color:#A4CF58;
+	}

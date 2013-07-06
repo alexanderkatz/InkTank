@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: Cold Bold;
+	src: url(CODE%20Bold.otf);
+}
+@font-face {
+	font-family: Intro Inline;
+	src: url(Intro%Inline.otf);
+}
+p{font-family: Intro Inline;}
+
+#designer, #coder{
+	font-family:Cold Bold;
+	}
+#coder{
+	font-size:14px;	
+	letter-spacing:55px;
+}
+#designer{
+	font-size:14px;	
+	letter-spacing:30px;
+	}
+	
+#bios {
+	font-family: Intro Inline;
+	font-size:18px;
+}
+
+#cOne
+{
+	font-family: Intro Inline;
+}
+	
+::-webkit-input-placeholder { /* WebKit browsers */
+   font-family: Intro Inline;
+   font-size:16px;
+   color:#7F7F7F;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-family: Intro Inline;
+   font-size:16px;
+   color:#7F7F7F;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: Intro Inline;
+	font-size:16px;
+	color:#7F7F7F;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-family: Intro Inline;
+	font-size:16px;
+	color:#7F7F7F;
+}	

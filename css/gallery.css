@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#innerGallery{
+		width:780px;
+		height:780px;
+		background-color:;
+	}
+
+.thumb{
+	width:248px;
+	height:248px;
+	display:inline-block;
+	}
+.shift{
+	margin-left:13px;
+	}
+.down{
+	margin-top:14px;
+	}			
+	
+.brighten img {
+  -webkit-filter: sepia(1);
+  -webkit-transition: all 0s ease;
+     -moz-transition: all 0s ease;
+       -o-transition: all 0s ease;
+      -ms-transition: all 0s ease;
+          transition: all 0s ease;
+}
+ 
+.brighten img:hover {
+  -webkit-filter: sepia(0);
+}
+	
