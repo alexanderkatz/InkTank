@@ -155,18 +155,31 @@
 	
 	#footer{
 		height:192px;
-		width:100%;
+		width:978px;
 		background-color:#2E3A3D;
 	}
+	#contactJacob
+	{
+		width:30%;
+		height:192px;
+		display:inline-block;
+		background-color:red;
+	}
 	#semiC{
-		width:282px;
+		width:34%;;
 		height:192px;
 		background-image:url(images/semiC.png);
 		background-position:center;
-		text-align:center;
-		line-height:96px;
-		}
+		display:inline-block;
 
+		}
+	#contactAlex
+	{
+		width:30%;
+		height:192px;
+		display:inline-block;
+		background-color:red;
+	}
 		
 		
 		
