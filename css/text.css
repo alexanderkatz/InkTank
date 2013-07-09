@@ -4,23 +4,22 @@
 
 @font-face {
 	font-family: Cold Bold;
-	src: url(CODE%20Bold.otf);
+	src: url(CodeBold.otf);
 }
 @font-face {
 	font-family: Intro Inline;
-	src: url(Intro%Inline.otf);
+	src: url(IntroInline.otf);
 }
 p{font-family: Intro Inline;}
 
 #designer, #coder{
+	font-size:14px;	
 	font-family:Cold Bold;
 	}
 #coder{
-	font-size:14px;	
 	letter-spacing:55px;
 }
 #designer{
-	font-size:14px;	
 	letter-spacing:30px;
 	}
 	

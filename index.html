@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+<title>Ink Tank</title>
 <!--CSS-->
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
@@ -38,13 +38,14 @@
 </div>
 <div id="blue">
 	<div class="center" id="bios">
-    	<div id="jacob">
+    <div id="jacob">
         <div class="tableChild"> 
         Jacob Gilbert is responsible for all things visual. His attention to detail and experience as an artist is evidenced in the quality and the unique character of his work. Jacob hopes to create his own major in evironmental architecture.
         </div>
         </div>
   		<div class="center" id="company">
-    	<div class="tableChild">We are Alex and Jacob and this is our design firm, Ink Tank. Jacob does design, Alex does code. Together with our clients we create compelling visual and interactive experiences. We are currently studying at Oberlin College, where, after years of artistic collaboration, we have finally launched our studio. We approach design as an integrated process. By working closely with our clients and understanding their specific goals and missions, we are able to craft for them a unique artistic identity.
+    	<div class="tableChild">
+        <p>We are Alex and Jacob and this is our design firm, Ink Tank. Jacob does design, Alex does code. Together with our clients we create compelling visual and interactive experiences. We are currently studying at Oberlin College, where, after years of artistic collaboration, we have finally launched our studio. We approach design as an integrated process. By working closely with our clients and understanding their specific goals and missions, we are able to craft for them a unique artistic identity.</p>
         </div>
         </div>
         <div id="alex">
@@ -54,6 +55,8 @@
         </div>
 	</div>
 </div>
+
+<!--Gallery-->
 <div  id="gallery">
   <div style="width:100%">
   	<div class="center" id="cOne">
@@ -83,23 +86,24 @@
 <div id="contact_form">
  <a name="contact">
  <fieldset> 
- <form class="center" method="post" action="/">
-        <input type="text" id="nameInput" name="name" placeholder="Type Name Here">
-        <input type="email" id="emailInput" name="email"  placeholder="Type Email Here">
-        <br/>
-      	<textarea id="messageInput" name="message" placeholder="Type Here"></textarea>
-        <br/>
-		<button type="submit" onclick="mail()" value="Send" name="submit" class="button center" >Submit</button>
-        <label id="error">Hello</label>		
+ <form class="center" action="mail.php" method="post"">
+ 
+        <input name="name" type="text" id="nameInput" placeholder="Type Name Here">
+        <input name="email" type="email" id="emailInput" placeholder="Type Email Here"><br/>
+      	<textarea name="message" id="messageInput" placeholder="Type Here"></textarea><br/>
+ 
+		<!-- <button type="submit" onclick="mail()" value="Send" name="submit" class="button center" >Submit</button> -->
+        <input type="submit" value="Submit" />
+        <label id="error"></label>
  </form>
  </fieldset>
 </div>
-
 <div id="lowerPattern"></div>
 <div id="footer">
 	<div class="center" id="semiC">
     <br /><p>Thanks!</p>
     </div>
 </div>
+
 </body>
 </html>

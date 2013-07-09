@@ -20,15 +20,15 @@
 	}			
 	
 .brighten img {
-  -webkit-filter: sepia(1);
-  -webkit-transition: all 0s ease;
-     -moz-transition: all 0s ease;
-       -o-transition: all 0s ease;
-      -ms-transition: all 0s ease;
-          transition: all 0s ease;
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
 }
  
 .brighten img:hover {
   -webkit-filter: sepia(0);
+  -webkit-filter: drop-shadow(7px 7px 20px black);
 }
 	
