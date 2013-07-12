@@ -10,7 +10,8 @@
 	font-family: Intro Inline;
 	src: url(IntroInline.otf);
 }
-p{font-family: Intro Inline;}
+p,ul{font-family: Intro Inline;}
+
 
 #designer, #coder{
 	font-size:14px;	

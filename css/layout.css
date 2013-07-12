@@ -152,38 +152,57 @@
 		width:100%;
 		background-image:url(images/patternSegment.jpg);
 	}
-	
+/* Contains contact information */	
 	#footer{
 		height:192px;
-		width:978px;
-		background-color:#2E3A3D;
+		width:792px;
 	}
-	#contactJacob
-	{
-		width:30%;
-		height:192px;
-		display:inline-block;
-		background-color:red;
-	}
-	#semiC{
-		width:34%;;
-		height:192px;
-		background-image:url(images/semiC.png);
-		background-position:center;
-		display:inline-block;
 
-		}
-	#contactAlex
+/* Inline Block Testing for Footer */	
+	ul#inlineBlock,
+	ul#inlineBlock li 
 	{
-		width:30%;
-		height:192px;
-		display:inline-block;
-		background-color:red;
+	/* Setting a common base */
+	margin: 0;
+	padding: 0;
 	}
+	ul#inlineBlock{
+	width: 792px;
+	}
+	ul#inlineBlock li 
+	{
+	display: inline-block;
+	width: 200px;
+	min-height: 192px;
+	vertical-align: top;
+	/* For IE 7 */
+	zoom: 1;
+	*display: inline;
+	}		
 		
-		
-		
-		
+	#inlineBlock #jacobContact
+	{
+	width:296px;
+	}
+	#inlineBlock #jacobContact p
+	{
+	margin-top:84px;
+	}
+	#inlineBlock #thankYou
+	{
+	text-align:center;	
+	background-image:url(images/semiC.png);
+	background-position:center;
+	}
+	#inlineBlock #alexContact
+	{
+	width:296px;
+	text-align:right;
+	}	
+	#inlineBlock #alexContact p
+	{
+	margin-top:84px;
+	}	
 		
 		
 		
