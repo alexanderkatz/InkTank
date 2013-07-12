@@ -1,11 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
+	/*Class for centering elements*/
 	.center
 	{
 		margin-left:auto;
 		margin-right:auto;	
 	}
+	
 	#header
 	{
 		width: 100%;
@@ -15,14 +17,15 @@
 		background-repeat:no-repeat;
 		background-size:100% 347px;
 		}
+		
 	#logo{
 		width:300px;
 		height:300px;	
 		background-image:url(images/logo.png);
 		background-repeat:no-repeat;
 		background-position:center;
-
-		}	
+		}
+			
 	#menu{
 		width:109px;
 		height:66px;
@@ -31,7 +34,8 @@
 		left:-54px;
 		top:310px;
 		background-image:url(images/woodBox.jpg);
-		}	
+		}
+	/* Multicolored band */		
 	#band{
 		width:100%;
 		height:4px;
@@ -43,10 +47,8 @@
 	{
 		height:342px;
 		width:900px;
-		background-color:white;
-		
-		
-	}
+/*		background-color:white;
+*/	}
 	#vennImage{
 		width:319px;
 		height:342px;
@@ -56,22 +58,23 @@
 		display:block;
 		z-index:10;
 		}
-	
+	/*Text - "Designer"*/
 	#designer{
 		position:absolute;
 		top:500px;
 		}
+	/*Text - "Coder"*/	
 	#coder{
 		float:left;
 		margin-top:150px;
 		margin-left:625px;
 		}	
 
-	#blue
+/*Biographies Section*/
+	#bios_wrapper
 	{
 		height:387px;
 		width:100%;
-		
 	}
 	#bios{
 		width:960px;
@@ -82,15 +85,14 @@
 		vertical-align:middle;
 		width:300px;
 		text-align:center;
-		}
-	
+	}
 	#jacob
 	{
-	vertical-align:top; 
-	width:305px;		
-	height: 386px;
-	color:#1BA89A;
-	display:inline-table;
+		vertical-align:top; 
+		width:305px;		
+		height: 386px;
+		color:#1BA89A;
+		display:inline-table;
 	}
 	#company{
 		vertical-align:top; 
@@ -98,27 +100,24 @@
 		height: 386px;
 		color:green;
 		display:inline-table;
-		
 	}
 	#alex{	
-	vertical-align:top; 
-	width:305px;	
-	height: 386px;	
-	color:#1BA89A;
-	display:inline-table;
+		vertical-align:top; 
+		width:305px;	
+		height: 386px;	
+		color:#1BA89A;
+		display:inline-table;
 	}
+/*Projects Section*/	
 	#cOne{
 		width:282px;
 		height:298px;
 		background-image:url(images/redC.png);
 		background-position:center;
-	
-		}
+	}
 	#cOne p{
-		
 		text-align:center;
 		line-height:298px;
-		
 		}	
 	#gallery
 	{
@@ -152,13 +151,15 @@
 		width:100%;
 		background-image:url(images/patternSegment.jpg);
 	}
-/* Contains contact information */	
-	#footer{
+	
+/*Contact Information Section*/	
+	/* Contains contact information */	
+	#contactInfo_wrapper{
 		height:192px;
 		width:792px;
 	}
 
-/* Inline Block Testing for Footer */	
+	/* Inline Block Testing for Footer */	
 	ul#inlineBlock,
 	ul#inlineBlock li 
 	{
