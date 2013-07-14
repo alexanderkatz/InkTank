@@ -5,7 +5,6 @@
 <title>Ink Tank</title>
 <!--CSS-->
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
-<link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/gallery.css" rel="stylesheet" type="text/css" />
 <link href="css/text.css" rel="stylesheet" type="text/css" />
 <link href="css/menu.css" rel="stylesheet" type="text/css" />
@@ -13,9 +12,6 @@
 <!--JS-->
 <script type="text/javascript" src="js/menu.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/mail.js"></script>
-
-
 
 </head>
 <body onload="freezeMenu()">
@@ -38,19 +34,19 @@
 </div>
 <div id="bios_wrapper">
 	<div class="center" id="bios">
-    <div id="jacob">
-        <div class="tableChild"> 
-        Jacob Gilbert is responsible for all things visual. His attention to detail and experience as an artist is evidenced in the quality and the unique character of his work. Jacob hopes to create his own major in evironmental architecture.
-        </div>
+    	<div id="jacob">
+        	<div class="tableChild"> 
+        	Jacob Gibert is head of design. He has a keen aesthetic sense and is interested in pursuing a career in sustainable architecture.
+        	</div>
         </div>
   		<div class="center" id="company">
-    	<div class="tableChild">
-        <p>We are Alex and Jacob and this is our design firm, Ink Tank. Jacob does design, Alex does code. Together with our clients we create compelling visual and interactive experiences. We are currently studying at Oberlin College, where, after years of artistic collaboration, we have finally launched our studio. We approach design as an integrated process. By working closely with our clients and understanding their specific goals and missions, we are able to craft for them a unique artistic identity.</p>
-        </div>
+    		<div class="tableChild">
+        		<p>We are Alex and Jacob and this is our design firm, Ink Tank. Jacob does design, Alex does code. Together with our clients we create compelling visual and interactive experiences. </p>
+        	</div>
         </div>
         <div id="alex">
         <div class="tableChild">
-        Alex Katz. Alex is a Computer Science major and web dev enthusiast.
+        Alex Katz is responsible for development. He is a Computer Science major and is planning on working in software development.
         </div>
         </div>
 	</div>
@@ -59,7 +55,7 @@
 <!--Gallery-->
 <div  id="gallery">
   <div style="width:100%">
-  	<div class="center" id="cOne">
+  	<div class="center circleText" id="cOne">
     <p>Projects</p>
     </div>
     <div class="center" id="innerGallery">
@@ -79,14 +75,12 @@
 	</div>
 </div>
 <div id="anyQuestions">
-<div class="center" id="cTwo"><p>Any Questions?</p></div>
+	<div class="center circleText" id="cTwo"><p>Any Questions?</p></div>
 </div>
 
 <!-- Contact Form -->
 <div id="contact_form">
- 
-  
- <form class="center" action="mail.php" method="post">
+<form class="center" action="mail.php" method="post">
  
         <input name="name" type="text" id="nameInput" placeholder="Type Name Here">
         <input name="email" type="email" id="emailInput" placeholder="Type Email Here"><br/>
@@ -95,18 +89,16 @@
 		<!-- <button type="submit" onclick="mail()" value="Send" name="submit" class="button center" >Submit</button> -->
         <input type="submit" value="Submit" />
         <label id="error"></label>
- </form>
+</form>
  
 </div>
 <div id="lowerPattern"></div>
-<div class="center" id="contactInfo_wrapper">
-	<ul class="center" id="inlineBlock">
-		<li id="jacobContact"><p>Jacob Gilbert<br />jgilbert@oberlin.edu<br />617-388-6511</p></li><li id="thankYou"><p>~OR~<br />Thank You!</p></li><li id="alexContact"><p>Alex Katz<br />akatz@oberlin.edu<br />617-893-1070</p></li>
-	</ul>
-    <!--<div id="contactJacob"></div>
-	<div class="center" id="semiC"> </div>
-    <div id="contactAlex"></div>-->
+<div id="footer">
+	<div class="center" id="contactInfo_wrapper">
+		<ul class="center" id="inlineBlock">
+			<li id="jacobContact"><p>Jacob Gilbert<br />jgilbert@oberlin.edu<br />617-388-6511</p></li><li id="thankYou"><p id="pOr">~OR~</p><p id="pThank">Thank You!</p></li><li id="alexContact"><p>Alex Katz<br />akatz@oberlin.edu<br />617-893-1070</p></li>
+		</ul>
+	</div>
 </div>
-
 </body>
 </html>

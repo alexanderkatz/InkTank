@@ -1,31 +1,36 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*Classes*/
 	/*Class for centering elements*/
 	.center
 	{
 		margin-left:auto;
 		margin-right:auto;	
 	}
-	
+	/* Class for circles */
+	.circleText
+	{
+		text-align:center;
+		line-height:298px;
+		color:white;	
+		width:282px;
+		height:298px;
+	}
+
+/*Header, Logo, Menu*/		
 	#header
 	{
 		width: 100%;
 		height: 343px;
-		background-image:url(images/WoodGrain.png);
-		background-attachment:fixed;
-		background-repeat:no-repeat;
+		background: url(images/WoodGrain.png) no-repeat fixed;
 		background-size:100% 347px;
-		}
-		
+	}	
 	#logo{
 		width:300px;
 		height:300px;	
-		background-image:url(images/logo.png);
-		background-repeat:no-repeat;
-		background-position:center;
-		}
-			
+		background:url(images/logo.png) no-repeat center;
+		}		
 	#menu{
 		width:109px;
 		height:66px;
@@ -35,26 +40,23 @@
 		top:310px;
 		background-image:url(images/woodBox.jpg);
 		}
+		
 	/* Multicolored band */		
 	#band{
 		width:100%;
 		height:4px;
-		background-image:url(images/band.png);		
-		background-repeat:no-repeat;
+		background:url(images/band.png) no-repeat;		
 		background-size: 100% 100%;
-		}		
+	}		
 	#venn
 	{
 		height:342px;
 		width:900px;
-/*		background-color:white;
-*/	}
+	}
 	#vennImage{
 		width:319px;
 		height:342px;
-		background-image:url(images/portrait.png);
-		background-position:center center;
-		background-repeat:no-repeat;
+		background:url(images/portrait.png) no-repeat center center;
 		display:block;
 		z-index:10;
 		}
@@ -84,7 +86,8 @@
 		display:table-cell;
 		vertical-align:middle;
 		width:300px;
-		text-align:center;
+		text-align:justify;
+		padding:10px 10px;
 	}
 	#jacob
 	{
@@ -110,15 +113,9 @@
 	}
 /*Projects Section*/	
 	#cOne{
-		width:282px;
-		height:298px;
 		background-image:url(images/redC.png);
 		background-position:center;
 	}
-	#cOne p{
-		text-align:center;
-		line-height:298px;
-		}	
 	#gallery
 	{
 		height:1108px;
@@ -132,14 +129,8 @@
 		background-image:url(images/patternSegment.jpg);
 		}
 	#cTwo{
-		height:298px;
-		width:282px;
-		background-image:url(images/greenC.png);
-		background-position:center;}	
-		#cTwo p{
-		text-align:center;
-		line-height:298px;
-		}	
+		background:url(images/greenC.png) center;
+	}	
 		
 	#contact_form{
 		height:329px;
@@ -152,14 +143,19 @@
 		background-image:url(images/patternSegment.jpg);
 	}
 	
-/*Contact Information Section*/	
+/*Contact Information Section*/
+	#footer
+	{
+	background-color:#2E3A3D;
+	color:white;		
+	}	
 	/* Contains contact information */	
 	#contactInfo_wrapper{
 		height:192px;
 		width:792px;
 	}
 
-	/* Inline Block Testing for Footer */	
+	/* Inline Block for Footer */	
 	ul#inlineBlock,
 	ul#inlineBlock li 
 	{
@@ -204,9 +200,64 @@
 	{
 	margin-top:84px;
 	}	
-		
-		
-		
-		
+	#pOr
+	{
+		margin-top:47px;
+	}	
+	#pThank
+	{
+		margin-top:87px;
+		color:#2E3A3D;
+	}
+	
+/***************CSS RESET***************/		
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}	
 		
 		
