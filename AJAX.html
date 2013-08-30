@@ -1,0 +1,37 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+	<script>
+	var d = new Date();
+	
+		function submit()
+		{
+		
+		window.alert("Button has been pressed at "+d.getMilliseconds()+" milliseconds");
+		
+		xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("GET","info.txt",true);
+		xmlhttp.send();
+		
+		while (1<2)
+		window.alert(xmlhttp.readyState);
+		
+		}
+		
+		xmlhttp.onreadystatechange=function()
+		{
+			window.alert("hello");
+			//document.body.innerHTML = xmlhttp.responseText;
+			//document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+		}
+		
+    </script>
+</head>
+<body>
+	
+    <button onClick="submit()">Get Information</button>
+	<div id="myDiv"></div>
+</body>
+</html>

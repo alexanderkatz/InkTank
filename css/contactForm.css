@@ -8,16 +8,19 @@ input{
 	width:382px;
 	height:33px;
 	}
-#emailInput{
-}
+
 textarea{
-	width:780px;
+	width:774px;
 	height:200px;
 	margin:0 auto;
 	margin-top:10px;
 	}	
 
 button{
-	width:100px;
-	color:black;
-	}		
+	height:27px;
+	width:778px;
+	margin-top:10px;
+	background-color:#2E3A3D;
+	color:white;
+	}	
+		

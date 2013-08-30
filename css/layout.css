@@ -18,7 +18,8 @@
 		height:298px;
 	}
 
-/*Header, Logo, Menu*/		
+/*Header, Logo, Menu*/
+				
 	#header
 	{
 		width: 100%;
@@ -50,16 +51,22 @@
 	}		
 	#venn
 	{
-		height:342px;
-		width:900px;
+		/*will include red band*/
+		height:163px;
+		width:960px;
+		background-image:url(images/portholesBG4.png);
+		background-repeat:no-repeat;
+		background-position:center 406px;
+		background-attachment:fixed;
+		
 	}
-	#vennImage{
+	/*#vennImage{
 		width:319px;
 		height:342px;
 		background:url(images/portrait.png) no-repeat center center;
 		display:block;
 		z-index:10;
-		}
+		}*/
 	/*Text - "Designer"*/
 	#designer{
 		position:absolute;
@@ -127,6 +134,7 @@
 		height:295px;
 		width:100%;
 		background-image:url(images/patternSegment.jpg);
+		background-position: -5px 5px;
 		}
 	#cTwo{
 		background:url(images/greenC.png) center;
@@ -137,11 +145,31 @@
 		width:100%;
 		background-color:#A4CF58;
 	}
+	
+/*Lower Pattern*/
+	/*Wrapper for centering on resize*/
+	/*#lp_wrapper{
+		width:900;
+		height:99px;
+		position:relative;
+		}
 	#lowerPattern{
 		height:99px;
 		width:100%;
 		background-image:url(images/patternSegment.jpg);
-	}
+		background-color:green;
+		/*Keeps div centered on resize
+		position:absolute;
+		left:50%;
+		/*Must be px amount equivalent to 50% of the width of the window
+		margin-left:0px;
+	}*/
+	#lowerPattern{
+		height:99px;
+		width:100%;
+		background-image:url(images/patternSegment.jpg);
+		display:table;
+		}
 	
 /*Contact Information Section*/
 	#footer

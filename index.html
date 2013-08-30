@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Ink Tank</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!--CSS-->
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <link href="css/gallery.css" rel="stylesheet" type="text/css" />
@@ -11,45 +12,26 @@
 <link href="css/contactForm.css" rel="stylesheet" type="text/css" />
 <!--JS-->
 <script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/center.js"></script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
-<body onload="freezeMenu()">
+<body>
 <div id="header">
   <div class="center" id="logo"></div>
 </div>
 <div id="menu">
 	<p>
     <a id="do" href="#">what we do</a>
-    <a id="are" href="#blue">who we are</a>
+    <a id="are" href="#bios_wrapper">who we are</a>
     <a id="proj" href="#gallery">projects</a>
-    <a id="cont" href="#contact">contact</a>
+    <a id="cont" href="#contact_form">contact</a>
     </p>
 </div>
 <div id="band"></div>
 <div class="center" id="venn">
-	<div id="designer"><p>DESIGNER</p></div>
-    <div id="coder">CODER</div>
-    <div class="center" id="vennImage"></div>
-</div>
-<div id="bios_wrapper">
-	<div class="center" id="bios">
-    	<div id="jacob">
-        	<div class="tableChild"> 
-        	Jacob Gibert is head of design. He has a keen aesthetic sense and is interested in pursuing a career in sustainable architecture.
-        	</div>
-        </div>
-  		<div class="center" id="company">
-    		<div class="tableChild">
-        		<p>We are Alex and Jacob and this is our design firm, Ink Tank. Jacob does design, Alex does code. Together with our clients we create compelling visual and interactive experiences. </p>
-        	</div>
-        </div>
-        <div id="alex">
-        <div class="tableChild">
-        Alex Katz is responsible for development. He is a Computer Science major and is planning on working in software development.
-        </div>
-        </div>
-	</div>
+	<img src="css/images/portholesBG.png" width="960" height="163" />
 </div>
 
 <!--Gallery-->
@@ -59,18 +41,24 @@
     <p>Projects</p>
     </div>
     <div class="center" id="innerGallery">
-    	<div class="thumb brighten" id="p1"><a href="#"><img src="thumbs/boomDone.png" width="248" height="248" /></a></div>
-    	<div class="thumb shift brighten" id="p2"><a href="#"><img src="thumbs/stereocure.png" width="248" height="248" /></a></div>
-    	<div class="thumb shift brighten" id="p3"><a href="#"><img src="thumbs/geoCity.png" width="248" height="248" /></a></div>
-
-    	<div class="thumb down brighten" id="p4"><a href="#"><img src="thumbs/homing.png" width="248" height="248" /></a></div>
-    	<div class="thumb shift brighten" id="p5"><a href="#"><img src="thumbs/boot.png" width="248" height="248" /></a></div>
-    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/train.png" width="248" height="248" /></a></div>
-
-    	<div class="thumb down brighten" id="p7"><a href="#"><img src="thumbs/climbing.png" width="248" height="248" /></a></div>
-    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/skateboard.png" width="248" height="248" /></a></div>
-    	<div class="thumb shift brighten" id="p9"><a href="#"><img src="thumbs/houses.png" width="248" height="248" /></a></div>
-
+	    <div class="thumb brighten" id="p1"><a href="#"><img src="thumbs/business.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p2"><a href="#"><img src="thumbs/stereocure.png" width="240" height="240"/></a></div>
+    	<div class="thumb shift brighten" id="p3"><a href="#"><img src="thumbs/unbound.png" width="240" height="240" /></a></div>
+		<div class="thumb shift brighten" id="p4"><a href="#"><img src="thumbs/train.png" width="240" height="240" /></a></div>
+    	
+        <div class="shiftUp">
+        <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/globalclimb.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/geoCity.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/boomDone.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/attn.png" width="240" height="240" /></a></div>
+    	</div>
+        
+        <div class="shiftUp">
+        <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/houses.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/boot.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/homing.png" width="240" height="240" /></a></div>
+    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/climbing.png" width="240" height="240" /></a></div>
+    	</div>
     </div>
 	</div>
 </div>
@@ -80,19 +68,22 @@
 
 <!-- Contact Form -->
 <div id="contact_form">
-<form class="center" action="mail.php" method="post">
+<form class="center" name="contactForm" action="mail.php" method="post">
  
         <input name="name" type="text" id="nameInput" placeholder="Type Name Here">
         <input name="email" type="email" id="emailInput" placeholder="Type Email Here"><br/>
       	<textarea name="message" id="messageInput" placeholder="Type Here"></textarea><br/>
  
-		<!-- <button type="submit" onclick="mail()" value="Send" name="submit" class="button center" >Submit</button> -->
-        <input type="submit" value="Submit" />
-        <label id="error"></label>
+		 <button id="formbutton" type="submit" onclick="" value="Send" name="submit" class="button center" >
+         Submit
+         </button> 
+         <label id="error"></label>
 </form>
  
 </div>
-<div id="lowerPattern"></div>
+<div id="lp_wrapper">
+	<div id="lowerPattern"></div>
+</div>
 <div id="footer">
 	<div class="center" id="contactInfo_wrapper">
 		<ul class="center" id="inlineBlock">

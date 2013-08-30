@@ -23,10 +23,11 @@ p,ul{font-family: Intro Inline;}
 #designer{
 	letter-spacing:30px;
 	}
-	
+/*remove this*/
 #bios {
 	font-family: Intro Inline;
 	font-size:18px;
+	display:none;
 	
 }
 
@@ -34,6 +35,12 @@ p,ul{font-family: Intro Inline;}
 {
 	font-family: Intro Inline;
 }
+#formbutton
+{
+	font-size:17px;
+	font-family: Intro Inline;
+}
+
 	
 ::-webkit-input-placeholder { /* WebKit browsers */
    font-family: Intro Inline;
