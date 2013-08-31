@@ -49,7 +49,7 @@
 		background:url(images/band.png) no-repeat;		
 		background-size: 100% 100%;
 	}		
-	#venn
+	#portholes
 	{
 		/*will include red band*/
 		height:163px;
@@ -60,13 +60,6 @@
 		background-attachment:fixed;
 		
 	}
-	/*#vennImage{
-		width:319px;
-		height:342px;
-		background:url(images/portrait.png) no-repeat center center;
-		display:block;
-		z-index:10;
-		}*/
 	/*Text - "Designer"*/
 	#designer{
 		position:absolute;
