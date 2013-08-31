@@ -17,7 +17,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body onload="galleryWidth()">
 <div id="header">
   <div class="center" id="logo"></div>
 </div>
@@ -41,23 +41,23 @@
     <p>Projects</p>
     </div>
     <div class="center" id="innerGallery">
-	    <div class="thumb brighten" id="p1"><a href="#"><img src="thumbs/business.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p2"><a href="#"><img src="thumbs/stereocure.png" width="240" height="240"/></a></div>
-    	<div class="thumb shift brighten" id="p3"><a href="#"><img src="thumbs/unbound.png" width="240" height="240" /></a></div>
-		<div class="thumb shift brighten" id="p4"><a href="#"><img src="thumbs/train.png" width="240" height="240" /></a></div>
+	    <div class="thumb brighten" id="p1"><a href="#"><img src="thumbs/business.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p2"><a href="#"><img src="thumbs/stereocure.png" /></a></div>
+    	<div class="thumb shift brighten" id="p3"><a href="#"><img src="thumbs/unbound.png"  /></a></div>
+		<div class="thumb shift brighten" id="p4"><a href="#"><img src="thumbs/train.png"  /></a></div>
     	
         <div class="shiftUp">
-        <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/globalclimb.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/geoCity.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/boomDone.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/attn.png" width="240" height="240" /></a></div>
+        <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/globalclimb.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/geoCity.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/boomDone.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/attn.png"  /></a></div>
     	</div>
         
         <div class="shiftUp">
-        <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/houses.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/boot.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/homing.png" width="240" height="240" /></a></div>
-    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/climbing.png" width="240" height="240" /></a></div>
+        <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/houses.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/boot.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/homing.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/climbing.png"  /></a></div>
     	</div>
     </div>
 	</div>
@@ -91,5 +91,20 @@
 		</ul>
 	</div>
 </div>
+<script>
+	function galleryWidth()
+	{
+		var div = document.getElementById("gallery");
+		var currWidth = div.style.width;
+		div.style.width = currWidth+10;
+		window.alert(div.style.width);
+		//if (window.innerWidth>700 && window.innerWidth<1300)
+//		{
+//		document.getElementById("gallery").style.width = 	document.getElementById("gallery").width+5;
+//
+//		}
+	}
+	
+</script>
 </body>
 </html>
