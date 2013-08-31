@@ -59,6 +59,7 @@
 		background-position:center 406px;
 		background-attachment:fixed;
 		
+		
 	}
 	/*Text - "Designer"*/
 	#designer{
@@ -118,9 +119,10 @@
 	}
 	#gallery
 	{
-		height:1108px;
-		width:100%;
+		height:auto;
+		width:100%;/*+5px*/
 		background-color:#1BA89A;
+		
 	}
 /*Any Questions*/	
 	#anyQuestions{
