@@ -3,17 +3,20 @@
 
 #innerGallery
 {
-	width:960px;
-	height:720px;
+	max-width:1300px;
+	min-width:700px;
+	width:100%;
+	height:auto;
 /*	background-color:black;
 */}
 .thumb
 {
-	width:240px;
-	height:240px;
+	width:25%;
 	display:inline-block;
 	padding: 0px 0px 0px 0px;
 }
+.thumb img
+{width:100%;}
 .shift
 {
 	margin-left:-5px;
@@ -24,11 +27,11 @@
 }
 		
 .brighten img:hover {
-  -webkit-transition: all .5s ease;
-     -moz-transition: all .5s ease;
-       -o-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-          transition: all .5s ease;
+  -webkit-transition: all 0s ease;
+     -moz-transition: all 0s ease;
+       -o-transition: all 0s ease;
+      -ms-transition: all 0s ease;
+          transition: all 0s ease;
 		    -webkit-filter: opacity(1);
 
 }
