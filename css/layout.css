@@ -17,16 +17,24 @@
 		width:282px;
 		height:298px;
 	}
+	/* Class for Horizontal Red Band */
+	.redband
+	{
+		background-color:#F37771;
+		height:3px;
+		width:100%;
+	}
 
 /*Header, Logo, Menu*/
 				
 	#header
 	{
 		width: 100%;
-		height: 343px;
+		height: 467px;
 		background: url(images/WoodGrain.png) no-repeat fixed;
-		background-size:100% 347px;
+		background-size:100% 467px;
 	}	
+	
 	#logo{
 		width:300px;
 		height:300px;	
@@ -38,7 +46,7 @@
 		position:absolute;
 		margin-left:50%;
 		left:-54px;
-		top:310px;
+		top:270px;
 		background-image:url(images/woodBox.jpg);
 		}
 		
@@ -53,14 +61,15 @@
 	{
 		/*will include red band*/
 		height:163px;
-		width:960px;
-		background-image:url(images/portholesBG4.png);
-		background-repeat:no-repeat;
-		background-position:center 406px;
-		background-attachment:fixed;
-		
-		
+		width:100%;
+		background-color:;
 	}
+	#portholes_band
+	{
+		position:absolute;
+		margin-top:150px;
+	}
+	
 	/*Text - "Designer"*/
 	#designer{
 		position:absolute;
@@ -124,59 +133,38 @@
 		background-color:#1BA89A;
 		
 	}
-/*Any Questions*/	
-	#anyQuestions{
-		height:295px;
-		width:100%;
-		background-image:url(images/patternSegment.jpg);
-		background-position: -5px 5px;
-		}
-	#cTwo{
-		background:url(images/greenC.png) center;
-	}	
-		
-	#contact_form{
-		height:329px;
-		width:100%;
-		background-color:#A4CF58;
-	}
-	
-/*Lower Pattern*/
-	/*Wrapper for centering on resize*/
-	/*#lp_wrapper{
-		width:900;
-		height:99px;
-		position:relative;
-		}
-	#lowerPattern{
-		height:99px;
-		width:100%;
-		background-image:url(images/patternSegment.jpg);
-		background-color:green;
-		/*Keeps div centered on resize
-		position:absolute;
-		left:50%;
-		/*Must be px amount equivalent to 50% of the width of the window
-		margin-left:0px;
-	}*/
-	#lowerPattern{
-		height:99px;
-		width:100%;
-		background-image:url(images/patternSegment.jpg);
-		display:table;
-		}
-	
-/*Contact Information Section*/
-	#footer
-	{
-	background-color:#2E3A3D;
-	color:white;		
-	}	
+/*Mision / Company Summary*/
+#mission
+{
+	position:relative;
+	height:490px;
+	width:100%;
+	background-color:red;
+}	
+#mission_band_1
+{
+	margin-top:26px;
+}
+#mission_band_2
+{
+	position: absolute;
+    bottom: 0;
+}
+
+#contact_info_wrapper
+{
+	height:217px;
+	width:100%;
+}
 	/* Contains contact information */	
 	#contactInfo_wrapper{
-		height:192px;
-		width:792px;
-	}
+		height:217px;
+		background-size:100%;
+			background: url(images/WoodGrain.png) no-repeat fixed;
+				background-size:100%;
+
+
+	}*/
 
 	/* Inline Block for Footer */	
 	ul#inlineBlock,
@@ -232,6 +220,37 @@
 		margin-top:87px;
 		color:#2E3A3D;
 	}
+#map
+{
+	height:579px;
+	width:100%;
+	background:url(images/map.png) no-repeat center;
+	background-size:100%;
+}
+/*Any Questions*/	
+	#anyQuestions{
+		height:295px;
+		width:100%;
+		background-image:url(images/patternSegment.jpg);
+		background-position: -5px 5px;
+		}
+	#cTwo{
+		background:url(images/greenC.png) center;
+	}	
+		
+	#contact_form{
+		height:329px;
+		width:100%;
+		background-color:#A4CF58;
+	}
+	#lowerPattern{
+		height:99px;
+		width:100%;
+		background-image:url(images/patternSegment.jpg);
+		display:table;
+		}
+	
+
 	
 /***************CSS RESET***************/		
 

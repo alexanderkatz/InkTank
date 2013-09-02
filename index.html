@@ -11,35 +11,32 @@
 <link href="css/menu.css" rel="stylesheet" type="text/css" />
 <link href="css/contactForm.css" rel="stylesheet" type="text/css" />
 <!--JS-->
-<script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/center.js"></script>
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+<script src="js/my_scripts.js"></script>
 </head>
-<body onload="galleryWidth()">
+
+<body onload="setUp()">
 <div id="header">
   <div class="center" id="logo"></div>
-</div>
-<div id="menu">
-	<p>
-    <a id="do" href="#">what we do</a>
-    <a id="are" href="#bios_wrapper">who we are</a>
-    <a id="proj" href="#gallery">projects</a>
-    <a id="cont" href="#contact_form">contact</a>
-    </p>
-</div>
-<div id="band"></div>
-<div class="center" id="portholes">
-	<img src="css/images/portholesBG.png" width="960" height="163" />
+	<div id="menu">
+        <p>
+        <a id="do" href="#">what we do</a>
+        <a id="are" href="#bios_wrapper">who we are</a>
+        <a id="proj" href="#gallery">projects</a>
+        <a id="cont" href="#contact_form">contact</a>
+        </p>
+    </div>
+	<div id="band"></div>
+	<div class="center" id="portholes">
+            <div class="redband" id="portholes_band"></div>
+
+  		<img src="css/images/phole_opaque.png" width="960" height="165" /> 
+	</div>
 </div>
 
 <!--Gallery-->
 <div  id="gallery">
   <div style="width:100%">
-  	<div class="center circleText" id="cOne">
-    <p>Projects</p>
-    </div>
     <div class="center" id="innerGallery">
 	    <div class="thumb brighten" id="p1"><a href="#"><img src="thumbs/business.png"  /></a></div>
     	<div class="thumb shift brighten" id="p2"><a href="#"><img src="thumbs/stereocure.png" /></a></div>
@@ -55,13 +52,31 @@
         
         <div class="shiftUp">
         <div class="thumb brighten" id="p5"><a href="#"><img src="thumbs/houses.png"  /></a></div>
-    	<div class="thumb shift brighten" id="p6"><a href="#"><img src="thumbs/boot.png"  /></a></div>
-    	<div class="thumb shift brighten" id="p8"><a href="#"><img src="thumbs/homing.png"  /></a></div>
-    	<div class="thumb shift brighten" id="p7"><a href="#"><img src="thumbs/climbing.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p9"><a href="#"><img src="thumbs/boot.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p10"><a href="#"><img src="thumbs/homing.png"  /></a></div>
+    	<div class="thumb shift brighten" id="p11"><a href="#"><img src="thumbs/climbing.png"  /></a></div>
     	</div>
     </div>
 	</div>
 </div>
+
+<div id="mission">
+	<div class="redband" id="mission_band_1"></div>
+    <div id="mission_p">
+      <p>Hello,<p>
+      <p>We are Alex and Jacob and this is our design firm, Ink Tank. Jacob does design, Alex does code. Together with our clients we create compelling visual and interactive experiences. We are currently studying at Oberlin College, where, after years of artistic collaboration, we have finally launched our studio. We approach design as an integrated process. By working closely with our clients and understanding their specific goals and missions, we are able to craft for them a unique artistic identity. </p>
+    </div>
+    <div class="redband" id="mission_band_2"></div>
+</div>
+
+<div class="center" id="contactInfo_wrapper">
+	<ul class="center" id="inlineBlock">
+			<li id="jacobContact"><p>Jacob Gilbert<br />jgilbert@oberlin.edu<br />617-388-6511</p></li><li id="thankYou"><p id="pOr">~OR~</p><p id="pThank">Thank You!</p></li><li id="alexContact"><p>Alex Katz<br />akatz@oberlin.edu<br />617-893-1070</p></li>
+	</ul>
+</div>
+
+<div id="map"></div>
+
 <div id="anyQuestions">
 	<div class="center circleText" id="cTwo"><p>Any Questions?</p></div>
 </div>
@@ -92,19 +107,7 @@
 	</div>
 </div>
 <script>
-	function galleryWidth()
-	{
-		var div = document.getElementById("gallery");
-		var currWidth = div.style.width;
-		div.style.width = currWidth+10;
-		window.alert(div.style.width);
-		//if (window.innerWidth>700 && window.innerWidth<1300)
-//		{
-//		document.getElementById("gallery").style.width = 	document.getElementById("gallery").width+5;
-//
-//		}
-	}
-	
+
 </script>
 </body>
 </html>
